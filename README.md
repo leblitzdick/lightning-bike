@@ -59,5 +59,5 @@ Der Kunde wählt den Zeitraum und das Programm generiert eine Zahlungaufforderun
 
 Hat die Bezahlung funktioniert wird der Strom vom System für die gewählt Zeit eingeschaltet und man kann los fahren!!! Nach dem Ende der bezahlten Zeit schaltet das System ab und die Stromzufuhr wird unterbrochen. Das Programm kehrt zum Startbildschirm zurück und man könnte wieder neue Zeit buchen. 
 
-Hat es nicht funktioniert kehrt das Programm zum sofort Startbildschirm zurück.
+Hat es nicht funktioniert kehrt das Programm zum Startbildschirm zurück und man kann es nochmal probieren.
 
