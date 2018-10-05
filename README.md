@@ -9,21 +9,21 @@ Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über 
 Herz des System ist ein Raspberry Pi Zero WH, welcher sowohl die Anbindung an das Mobilnetz mittels UMTS Netzwerkkarte als auch die Schaltung der Stromzufuhr duch ein Relais steuert. Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Steuerung zur Verfügung stellt. 
 
 Das e-paper Display habe ich hauptsächlich aus 2 Gründen genommen:
-1. Es verbraucht im Anzeigenodus so gut wie überhaupt keine Strom, nur wenn sich der Bildinhalt ändert.
-2. Mir genügte ein einfaches s/w Display mit guter lesbarkeit auch in sonnigen Umgebungen  
+1. Es verbraucht im Anzeigemodus so gut wie überhaupt keinen Strom, nur wenn sich der Bildinhalt ändert.
+2. Mir genügte ein einfaches s/w Display mit guter Lesbarkeit auch in sonnigen Umgebungen.  
 
-Der Bildaufbau ist zwar mit ca. 6 sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.  
+Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.  
 
 Zum Fahrrad:
 
 Ein normales 28er Herrenrad mit Kettenschaltung, welches ich mit einem Umbausatz der Firma YOSE Power(Ebay) 
-in ein Pedelesc verwandelt habe. Der Umbausatz mit 250W Frontmotor entspricht den rechtlichen Bestimmungen, darf also ohne weiteres im Straßenverkehr benutzt werden. Auf den Umbau gehe ich hier nicht weiter ein, das ist eine Geschichte für sich!
+in ein Pedelec verwandelt habe. Der Umbausatz mit 250W Frontmotor entspricht den rechtlichen Bestimmungen, darf also ohne weiteres im Straßenverkehr benutzt werden. Auf den Umbau gehe ich hier nicht weiter ein, das ist eine Geschichte für sich!
 
 
 Das System besteht aus zwei Teilen:
 
 1. 
-Auf der Serverseite gibt es einen Raspberrypi 3 auf dem ein auf c-lightning basierender lightning Node installiert ist. Diese Installation unterscheidet sich nur dadurch, das kein kompletter Bitcoin Fullnode installiert ist. Ich verwende den pseudonode sPRUNED https://github.com/gdassori/spruned/ was den Vorteil hat das ich nur ca. 300MB für die "bitcoin blockchain" benötige. 
+Auf der Serverseite gibt es einen Raspberrypi 3 auf dem ein auf c-lightning basierender lightning Node installiert ist. Diese Installation unterscheidet sich nur dadurch, das kein kompletter Bitcoin Fullnode installiert ist. Ich verwende den pseudonode sPRUNED https://github.com/gdassori/spruned/ was den Vorteil hat, das ich nur ca. 300MB für die "bitcoin blockchain" benötige. 
 Dieser Schritt ist optional und nicht für die Umsetztung erforderlich, aber ich wollte gerne mehr über die Stabilität von sPRUNED erfahren. Wer noch keine bitcoin fullnode betreibt sollte lieber damit beginnen, es läuft etwas stabiler und stärkt gleichzeitig bitcoin!
 Für die Steuerung des lightning nodes wird die lightning-charge API https://github.com/ElementsProject/lightning-charge verwendet. Das war der Hauptgrund für mich für dieses Projekt die c-lightning implementierung zu wählen. Es war dann sehr einfach die Progammierung der Bezahlungvorgänge im Client umzusetzen.
 
