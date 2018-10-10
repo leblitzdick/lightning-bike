@@ -22,10 +22,11 @@ Nach dem Ende der bezahlten Zeit schaltet das System ab und die Stromzufuhr wird
 aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und man kann wieder neue Zeit buchen. Hat es nicht 
 funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probieren.
 
+
 ![Main](img/main.png)
-
 ![QR](img/qr.png)
-
+![Invoice](img/invoice.png)
+![Payed](img/payed.png)
 ![Enjoy](img/enjoy.png)
 
 
