@@ -1,4 +1,4 @@
-lightning payable e-bike
+# ⚡lightning⚡ payable e-bike
 
 The lightning-bike is an e-bike (pedelec) whose electrical support can be booked for a certain period of time. 
 It uses lightning as a payment system to activate this feature. You select on the display how long you want to drive, 
