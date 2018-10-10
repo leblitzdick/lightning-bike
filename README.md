@@ -27,3 +27,25 @@ for switching the power for the system is controlled via GPIO and also the 4 swi
 
 
 
+
+
+components server:
+- Raspberry Pi 3B
+- 16GB microSD card
+- Standard RPi case
+- microUSB cable
+- Power adapter
+- network cable
+
+components client:
+- Raspberry Pi Zero WH
+- 16GB microSD card
+- Waveshare 2.7inch E-Ink display 264x176 px
+- Huawei Technologies Co., Ltd. USB modem / network card
+   (prepaid from Tchibo - funny but maybe only in germany :-) (provider network O2)
+- 1 channel relay 5V / 230V
+- microUSB cable
+- Cable, solder, hot glue, assembly tape etc.
+- Self-designed case made of PLA - printed with a 3D printer (tevo tarantula)
+
+
