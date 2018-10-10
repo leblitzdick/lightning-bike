@@ -1,4 +1,4 @@
-lightning payable e-bike
+# ⚡lightning⚡ payable e-bike
 
 Das lightning-bike ist ein e-bike (pedelec) dessen elektrische Unterstützung man für einen bestimmten Zeitraum buchen kann. 
 Es benutzt lightning als Zahlungssystem um diese Funktion zu aktivieren. Man wählt am Display aus wie lange man fahren möchte, 
@@ -6,7 +6,7 @@ bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt un
 Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
 realisiert und die Stromversorgung über den Akkus des e-bikes.    
 
-Wie funktioniert es?
+## Wie funktioniert es?
 
 Der Client baut nach dem Bootvorgang automatisch mit der USB Netzwerkkarte eine Verbindung ins Internet auf. Das Programm startet
 und das Display zeigt den Startbildschirm auf dem man momentan zwischen drei unterschiedlichen Zeiten der Benutzung wählen kann.
@@ -22,7 +22,14 @@ Nach dem Ende der bezahlten Zeit schaltet das System ab und die Stromzufuhr wird
 aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und man kann wieder neue Zeit buchen. Hat es nicht 
 funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probieren.
 
-Systemaufbau:
+![Main](img/main.png)
+
+![QR](img/qr.png)
+
+![Enjoy](img/enjoy.png)
+
+
+## Systemaufbau:
 
 Herz des System ist ein Raspberry Pi Zero WH, welcher sowohl die Anbindung an das Mobilnetz als auch die Schaltung der 
 Stromzufuhr duch ein Relais steuert. Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 
@@ -45,7 +52,7 @@ auf einen raspberry Pi Zero WH mit einem e-paper Display. Problematischer im Str
 da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich über GPIO angesteuert und auch die 
 4 Druckschalter des e-paper werden über GPIO abgefragt.
 
-Bauteile Server:
+### Bauteile Server:
 - Raspberry Pi 3
 - 16GB microSD Karte (Sandisk)
 - Standardgehäuse schwarz
@@ -53,7 +60,7 @@ Bauteile Server:
 - Netzteil
 - Netzwerkkabel
 
-Bauteile Client:
+### Bauteile Client:
 - Raspberry Pi Zero WH
 - 16GB microSD Karte (Sandisk)
 - Waveshare 2.7inch E-Ink display 264x176 px 
@@ -64,7 +71,7 @@ Bauteile Client:
 - Kabel, Lötzinn, Heißkleber, Montageband usw.
 - Selbst entworfenes Gehäuse aus PLA mit einem 3D Drucker (tevo tarantula) ausgedruckt
 
-Zum Fahrrad:
+## Zum Fahrrad:
 
 Ein normales 28er Herrenrad mit Kettenschaltung, welches ich mit einem Umbausatz der Firma YOSE Power(Ebay) 
 in ein Pedelec verwandelt habe. Der Umbausatz mit 250W Frontmotor entspricht den rechtlichen Bestimmungen, 
