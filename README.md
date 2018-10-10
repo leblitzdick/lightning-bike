@@ -17,6 +17,11 @@ If it did not work, the start screen will be displayed and you can try it again.
 
 ![Main](img/main.png)
 
+![QR](img/qr.png)
+
+![Enjoy](img/enjoy.png)
+
+
 ## System setup:
 
 The heart of the system is a Raspberry Pi Zero WH, which controls both the connection to the mobile network and the switching 
