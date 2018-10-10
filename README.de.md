@@ -13,7 +13,7 @@ realisiert und die Stromversorgung über den Akkus des e-bikes.
 
 Der Client baut nach dem Bootvorgang automatisch mit der USB Netzwerkkarte eine Verbindung ins Internet auf. Das Programm startet
 und das Display zeigt den Startbildschirm auf dem man momentan zwischen drei unterschiedlichen Zeiten der Benutzung wählen kann.
-Pro Minute werden 250 Satochi verlangt. 
+Pro Minute werden 250 satoshi verlangt. 
 
 Der Kunde wählt den Zeitraum und das Programm generiert eine Zahlungaufforderung, die mittels lightning-charge an den node des
 Servers übermittelt wird. Der Client bekommt die Zahlunginformationen vom Server zurück, generiert daraus einen qr-code welcher
