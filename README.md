@@ -19,7 +19,7 @@ If it did not work, the start screen will be displayed and you can try it again.
 
 ![QR](img/qr.png)
 
-![Invoice](img/invoice.png)![Pay](img/pay.png)
+![Invoice](img/invoice.png)![Payed](img/payed.png)
 
 ![Enjoy](img/enjoy.png)
 
