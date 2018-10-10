@@ -49,12 +49,12 @@ ich nur ca. 300MB für die bitcoin blockchain benötige. Dieser Schritt ist opti
 aber ich wollte gerne mehr über die Stabilität von sPRUNED erfahren. Wer noch keine bitcoin fullnode betreibt sollte lieber damit
 beginnen, es läuft etwas stabiler und stärkt gleichzeitig das bitcoin Netzwerk! Für die Steuerung des lightning nodes wird die
 lightning-charge API https://github.com/ElementsProject/lightning-charge verwendet. Das war der Hauptgrund für mich die 
-c-lightning implementierung zu wählen. Damit war dann sehr einfach die Progammierung der Bezahlungvorgänge umzusetzen.
+c-lightning implementierung zu wählen. Damit war es dann sehr einfach die Progammierung der Bezahlungvorgänge umzusetzen.
 
 Auf der Clienseite habe ich darauf geachtet möglichst stromsparende Komponenten zu verwenden, deshalb viel meine Wahl 
 auf einen raspberry Pi Zero WH mit einem e-paper Display. Problematischer im Stromverbrauch ist sicher die USB Modem/Netzwerkkarte,
 da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich über GPIO angesteuert und auch die 
-4 Druckschalter des e-paper werden über GPIO abgefragt.
+4 Druckschalter des e-paper über GPIO abgefragt.
 
 ### Bauteile Server:
 - Raspberry Pi 3
