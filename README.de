@@ -1,33 +1,41 @@
 lightning payable e-bike
 
-Das lightning-bike ist ein e-bike (pedelec) dessen elektrische Unterstützung man für einen bestimmten Zeitraum buchen kann. Es benutzt lightning als Zahlungssystem um diese Funktion zu aktivieren.  
+Das lightning-bike ist ein e-bike (pedelec) dessen elektrische Unterstützung man für einen bestimmten Zeitraum buchen kann. 
+Es benutzt lightning als Zahlungssystem um diese Funktion zu aktivieren. Man wählt am Display aus wie lange man fahren möchte, 
+bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt und bezahlt, woraufhin der Strom für den gewählten
+Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
+realisiert und die Stromversorgung über den Akkus des e-bikes.    
 
-Man wählt am Display aus wie lange man fahren möchte, bekommt einen qr-code generiert den man mit seiner lightning APP scannt und bezahlt, woraufhin der Strom für den gewählten Zeitraum eingeschaltet wird.
-Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt realisiert und die Stromversorgung über den Akkus des e-bikes.    
-
-Herz des System ist ein Raspberry Pi Zero WH, welcher sowohl die Anbindung an das Mobilnetz mittels UMTS Netzwerkkarte als auch die Schaltung der Stromzufuhr duch ein Relais steuert. Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 4 Druckschalter für die Steuerung zur Verfügung stellt. 
-
-Das e-paper Display habe ich hauptsächlich aus 2 Gründen genommen:
-1. Es verbraucht im Anzeigemodus so gut wie überhaupt keinen Strom, nur wenn sich der Bildinhalt ändert.
-2. Mir genügte ein einfaches s/w Display mit guter Lesbarkeit auch in sonnigen Umgebungen.  
-
-Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder benötigt um den Bezahlvorgang zu erledigen.  
+Herz des System ist ein Raspberry Pi Zero WH, welcher sowohl die Anbindung an das Mobilnetz als auch die Schaltung der 
+Stromzufuhr duch ein Relais steuert. Als Monitor kommt ein e-paper Display zum Einsatz, welches praktischweise auch gleich 
+4 Druckschalter für die Steuerung zur Verfügung stellt. Das e-paper Display habe ich genommen da es im Anzeigemodus so gut wie 
+keinen Strom verbraucht eigentlich nur wenn sich der Bildinhalt ändert. Es ist auch an sonnigen Tage gut lesbar und hat 
+einen hohen Kontrast. Der Bildaufbau ist zwar mit ca. 6 Sek. relativ zäh, aber es werden eigenlich nur 2 Schritte/Bilder
+benötigt um den Bezahlvorgang zu erledigen.  
 
 Zum Fahrrad:
 
 Ein normales 28er Herrenrad mit Kettenschaltung, welches ich mit einem Umbausatz der Firma YOSE Power(Ebay) 
-in ein Pedelec verwandelt habe. Der Umbausatz mit 250W Frontmotor entspricht den rechtlichen Bestimmungen, darf also ohne weiteres im Straßenverkehr benutzt werden. Auf den Umbau gehe ich hier nicht weiter ein, das ist eine Geschichte für sich!
+in ein Pedelec verwandelt habe. Der Umbausatz mit 250W Frontmotor entspricht den rechtlichen Bestimmungen, 
+darf also ohne weiteres im Straßenverkehr benutzt werden. Auf den Umbau gehe ich hier nicht weiter ein, 
+das ist eine Geschichte für sich!
 
 
 Das System besteht aus zwei Teilen:
 
-1. 
-Auf der Serverseite gibt es einen Raspberrypi 3 auf dem ein auf c-lightning basierender lightning Node installiert ist. Diese Installation unterscheidet sich nur dadurch, das kein kompletter Bitcoin Fullnode installiert ist. Ich verwende den pseudonode sPRUNED https://github.com/gdassori/spruned/ was den Vorteil hat, das ich nur ca. 300MB für die "bitcoin blockchain" benötige. 
-Dieser Schritt ist optional und nicht für die Umsetztung erforderlich, aber ich wollte gerne mehr über die Stabilität von sPRUNED erfahren. Wer noch keine bitcoin fullnode betreibt sollte lieber damit beginnen, es läuft etwas stabiler und stärkt gleichzeitig bitcoin!
-Für die Steuerung des lightning nodes wird die lightning-charge API https://github.com/ElementsProject/lightning-charge verwendet. Das war der Hauptgrund für mich für dieses Projekt die c-lightning implementierung zu wählen. Es war dann sehr einfach die Progammierung der Bezahlungvorgänge im Client umzusetzen.
+Auf der Serverseite gibt es einen Raspberry Pi 3 Bauf dem ein auf c-lightning https://github.com/ElementsProject/lightning 
+basierender lightning node installiert ist. Diese Installation unterscheidet sich nur dadurch, das kein kompletter Bitcoin 
+fullnode installiert ist. Ich verwende den pseudonode sPRUNED https://github.com/gdassori/spruned/ was den Vorteil hat, dass
+ich nur ca. 300MB für die bitcoin blockchain benötige. Dieser Schritt ist optional und nicht für die Umsetztung erforderlich, 
+aber ich wollte gerne mehr über die Stabilität von sPRUNED erfahren. Wer noch keine bitcoin fullnode betreibt sollte lieber damit
+beginnen, es läuft etwas stabiler und stärkt gleichzeitig das bitcoin Netzwerk! Für die Steuerung des lightning nodes wird die
+lightning-charge API https://github.com/ElementsProject/lightning-charge verwendet. Das war der Hauptgrund für mich die 
+c-lightning implementierung zu wählen. Damit war dann sehr einfach die Progammierung der Bezahlungvorgänge umzusetzen.
 
-2.
-Auf der Clienseite habe ich darauf geachtet möglichst stromsparende Komponenten zu verwenden, deshalb viel meine Wahl auf einen raspberry Pi Zero WH mit einem e-paper Display. Problematischer im Stromverbrauch ist sicher die USB Modem/Netzwerkkarte, da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich über die GPIO Pfostenleiste angesteuert und auch die 4 Druckschalter des e-paper werden über GPIO abgefragt.
+Auf der Clienseite habe ich darauf geachtet möglichst stromsparende Komponenten zu verwenden, deshalb viel meine Wahl 
+auf einen raspberry Pi Zero WH mit einem e-paper Display. Problematischer im Stromverbrauch ist sicher die USB Modem/Netzwerkkarte,
+da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich über GPIO angesteuert und auch die 
+4 Druckschalter des e-paper werden über GPIO abgefragt.
 
 zu 1. Bauteile Server:
 - Raspberry Pi 3
