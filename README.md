@@ -16,11 +16,9 @@ Once the payment has been made, the system will power on for the selected time a
 If it did not work, the start screen will be displayed and you can try it again.
 
 ![Main](img/main.png)
-
 ![QR](img/qr.png)
-
-![Invoice](img/invoice.png)![Payed](img/payed.png)
-
+![Invoice](img/invoice.png)
+![Payed](img/payed.png)
 ![Enjoy](img/enjoy.png)
 
 
