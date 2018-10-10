@@ -11,7 +11,7 @@ battery of the e-bike.
 ## How does it work?
 
 The client automatically establishes a connection to the Internet with the USB network card after booting. The program starts and
-the display shows the start screen where you can currently choose between three different times of use. 250 satochi are required per minute.
+the display shows the start screen where you can currently choose between three different times of use. 250 satoshi are required per minute.
 
 The customer selects the period and the program generates a payment request, which is transmitted by lightning-charge to the node of the server. The client gets the payment information back from the server and uses it to generate a qr-code which is shown to the customer on the display. The customer now has 60 seconds to scan and pay for the qr-code with his lightning mobile APP. As long as the client tests at the server if the bill is reported as paid.
 
