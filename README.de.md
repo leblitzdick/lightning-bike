@@ -6,6 +6,9 @@ bekommt einen qr-code generiert den man mit seiner Handy lightning APP scannt un
 Zeitraum eingeschaltet wird. Das besondere an diesem System, es ist mobil, d.h. die Kommunikation wird über das Mobilfunknetzt
 realisiert und die Stromversorgung über den Akkus des e-bikes.    
 
+![Lbike](img/lbike.png)![Close_lbike](img/close_lbike.png)
+
+
 ## Wie funktioniert es?
 
 Der Client baut nach dem Bootvorgang automatisch mit der USB Netzwerkkarte eine Verbindung ins Internet auf. Das Programm startet
