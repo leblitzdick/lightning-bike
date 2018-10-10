@@ -5,6 +5,9 @@ It uses lightning as a payment system to activate this feature. You select on th
 get a qr-code that you scan and pay for with your lightning mobile APP, after that the power for the selected period is turned on. The special about this system, it's mobile, the communication is realized via the mobile network and the power comes from the 
 battery of the e-bike.
 
+![Lbike](img/lbike.png)![Close_lbike](img/close_lbike.png)
+
+
 ## How does it work?
 
 The client automatically establishes a connection to the Internet with the USB network card after booting. The program starts and
