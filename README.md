@@ -11,6 +11,8 @@ control of the programm. I mainly used the e-paper display because it consumes v
 changes, the contrast and good readability even on sunny days. The image composition is quite long with about 6 seconds, but it 
 will be require only 2 steps/images to complete the payment process.
 
+
+
 The bike:
 
 A normal 28 inches men's bike with derailleur system, what I converted into a e-bike with a conversion kit from the company 
@@ -25,6 +27,7 @@ On the client side, i choice a raspberry Pi Zero WH with an e-paper display, mai
 for switching the power for the system is controlled via GPIO and also the 4 switches of the e-paper queried via GPIO.
 
 
+
 How does it work?
 
 The client automatically establishes a connection to the Internet with the USB network card after booting. The program starts and
@@ -34,6 +37,8 @@ The customer selects the period and the program generates a payment request, whi
 
 Once the payment has been made, the system will power on for the selected time and you can start driving !!! After the end of the paid time, the system switches off and the power supply is interrupted - of course you can continue driving, but only with muscle power. The program returns to the home screen and you can book new time again.
 If it did not work, the start screen will be displayed and you can try it again.
+
+
 
 
 components server:
