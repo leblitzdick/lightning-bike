@@ -5,8 +5,6 @@ It uses lightning as a payment system to activate this feature. You select on th
 get a qr-code that you scan and pay for with your lightning mobile APP, after that the power for the selected period is turned on. The special about this system, it's mobile, the communication is realized via the mobile network and the power comes from the 
 battery of the e-bike.
 
-[![Lbike-video](https://img.youtube.com/vi/iHRs3hT8vJ8/0.jpg)](https://www.youtube.com/watch?v=iHRs3hT8vJ8)
-
 ![Lbike](img/lbike.png)![Close_lbike](img/close_lbike.png)
 
 
@@ -20,12 +18,12 @@ The customer selects the period and the program generates a payment request, whi
 Once the payment has been made, the system will power on for the selected time and you can start driving !!! After the end of the paid time, the system switches off and the power supply is interrupted - of course you can continue driving, but only with muscle power. The program returns to the home screen and you can book new time again.
 If it did not work, the start screen will be displayed and you can try it again.
 
-![Main](img/main.png)
-![QR](img/qr.png)
-![Invoice](img/invoice.png)
-![Payed](img/payed.png)
-![Enjoy](img/enjoy.png)
-
+<![Main](img/main.png)>
+<![QR](img/qr.png)>
+<![Invoice](img/invoice.png)>
+<![Payed](img/payed.png)>
+<![Enjoy](img/enjoy.png)>
+[![Lbike-video](https://img.youtube.com/vi/iHRs3hT8vJ8/0.jpg)](https://www.youtube.com/watch?v=iHRs3hT8vJ8)
 
 ## System setup:
 
