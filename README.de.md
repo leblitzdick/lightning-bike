@@ -25,13 +25,12 @@ Nach dem Ende der bezahlten Zeit schaltet das System ab und die Stromzufuhr wird
 aber nur noch mit Muskelkraft. Das Programm kehrt zum Startbildschirm zurück und man kann wieder neue Zeit buchen. Hat es nicht 
 funktioniert, wird der Startbildschirm aufgerufen und man kann es nochmal probieren.
 
-<!--[Main](img/main.png)
+[![Lbike-video](https://img.youtube.com/vi/iHRs3hT8vJ8/0.jpg)](https://www.youtube.com/watch?v=iHRs3hT8vJ8)
+![Main](img/main.png)
 ![QR](img/qr.png)
 ![Invoice](img/invoice.png)
 ![Payed](img/payed.png)
-![Enjoy](img/enjoy.png)-->
-[![Lbike-video](https://img.youtube.com/vi/iHRs3hT8vJ8/0.jpg)](https://www.youtube.com/watch?v=iHRs3hT8vJ8)
-
+![Enjoy](img/enjoy.png)
 
 ## Systemaufbau:
 
