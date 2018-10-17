@@ -56,8 +56,7 @@ for switching the power for the system is controlled via GPIO and also the 4 swi
 - 1 channel relay 5V / 230V
 - microUSB cable
 - Cable, solder, hot glue, assembly tape etc.
-- Self-designed case made of PLA - printed with a 3D printer (tevo tarantula)
-  https://www.thingiverse.com/thing:3160072
+- Self-designed case made of PLA https://www.thingiverse.com/thing:3160072
 
 ## The bike:
 
