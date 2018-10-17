@@ -73,6 +73,8 @@ da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich
 - microUSB Kabel
 - Kabel, Lötzinn, Heißkleber, Montageband usw.
 - Selbst entworfenes Gehäuse aus PLA mit einem 3D Drucker (tevo tarantula) ausgedruckt
+  
+  https://www.thingiverse.com/thing:3160072
 
 ## Zum Fahrrad:
 
