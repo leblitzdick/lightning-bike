@@ -57,7 +57,7 @@ da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich
 
 ### Bauteile Server:
 - Raspberry Pi 3
-- 16GB microSD Karte (Sandisk)
+- 16GB microSD Karte
 - Standardgehäuse schwarz
 - microUSB Kabel
 - Netzteil
@@ -65,7 +65,7 @@ da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich
 
 ### Bauteile Client:
 - Raspberry Pi Zero WH
-- 16GB microSD Karte (Sandisk)
+- 16GB microSD Karte
 - Waveshare 2.7inch E-Ink display 264x176 px 
 - Huawei Technologies Co., Ltd. USB Modem/Networkcard
   (prepaid von Tchibo :-) (Provider Netz O2)
