@@ -71,10 +71,9 @@ da gibt es vielleicht besseres. Das Relais zum Schalten des Stroms wird klassich
   (prepaid von Tchibo :-) (Provider Netz O2)
 - 1 Kanal Relais 5V/230V
 - microUSB Kabel
+- Selbst entworfenes Gehäuse aus PLA https://www.thingiverse.com/thing:3160072
 - Kabel, Lötzinn, Heißkleber, Montageband usw.
-- Selbst entworfenes Gehäuse aus PLA mit einem 3D Drucker (tevo tarantula) ausgedruckt
-  
-  https://www.thingiverse.com/thing:3160072
+
 
 ## Zum Fahrrad:
 
