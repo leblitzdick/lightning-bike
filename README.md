@@ -55,8 +55,8 @@ for switching the power for the system is controlled via GPIO and also the 4 swi
   (prepaid from Tchibo - funny but maybe only in germany :-) (provider network O2)
 - 1 channel relay 5V / 230V
 - microUSB cable
-- Cable, solder, hot glue, assembly tape etc.
 - Self-designed case made of PLA https://www.thingiverse.com/thing:3160072
+- Cable, solder, hot glue, assembly tape etc.
 
 ## The bike:
 
